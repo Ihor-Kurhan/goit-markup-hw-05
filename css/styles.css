@@ -88,9 +88,7 @@ img {display: block}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .contact-list:hover,
     .contact-list:focus {
@@ -100,7 +98,11 @@ img {display: block}
 
     .link-display-block {
         display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
+    
     .link-display-block:hover,
     .link-display-block:focus {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -125,10 +127,7 @@ img {display: block}
     color: #2E2F42;
     padding: 24px 0;
     display: block;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-list:hover,
 .menu-list:focus {
@@ -192,12 +191,12 @@ border: 0;
 border-radius: 4px;
 padding: 12px 24px;
 border: 1px solid #e7e9fc;
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-btn:hover {
@@ -368,7 +367,9 @@ fill: #f4f4fd;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #8e8f99;;
+    color: #8e8f99;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-link:hover,
@@ -550,5 +551,20 @@ margin-right: 76px;
 .link-icon-footer:hover, 
 .link-icon-footer:focus {
     background-color: #31d0aa;
+}
 
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
+
+.overlay:hover,
+.overlay:focus {
+    background-color: #4D5AE5;
 }
