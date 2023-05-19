@@ -581,6 +581,11 @@ margin-right: 76px;
     transition: transform 500ms ;
 }
 
+.overlay:hover,
+.overlay:focus {
+    transform: translateY(0%);
+}
+
 .sec-port-img:hover .overlay {
     transform: translate(0, 0);
 }
