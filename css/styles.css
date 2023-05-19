@@ -184,6 +184,9 @@ height: 56px;
 border: none;
 border-radius: 4px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+top: 24px;
+right: 24px;
+
 }
 .order-btn:hover {background-color: #404BBF;}
 .order-btn:focus {background-color: #404BBF;}
@@ -614,7 +617,6 @@ margin-right: 76px;
     position: absolute;
     width: 408px;
     min-height: 576px;
-    height: 584px;
     background: #FCFCFC;
     top: 50%;
     left: 50%;
