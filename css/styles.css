@@ -134,8 +134,11 @@ img {display: block}
     position: relative;
     /* color: #404bbf; */
 }
+.current {
+    
+}
 
-.menu-list::after {
+.current::after {
     content: '';
     position: absolute;
     left: 0;
@@ -145,6 +148,10 @@ img {display: block}
     border-radius: 2px;
 }
 
+.current {
+    color:  #404BBF;
+    
+}
 .menu-list:hover,
 .menu-list:focus {
     color: #404BBF;
