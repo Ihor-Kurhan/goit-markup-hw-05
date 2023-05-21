@@ -136,11 +136,11 @@ img {display: block}
 }
 
 
-.current-portf {
+.current {
     position: relative;
     color: #404bbf;
 }
-.current-portf::after {
+.current::after {
     content: '';
     position: absolute;
     left: 0;
@@ -149,18 +149,6 @@ img {display: block}
     background-color: #404bbf;
     border-radius: 2px;
 }
-
-.current::after {
-    content: '';
-    position: absolute;
-    width: 48px;
-    left: 0;
-    bottom: -1px; 
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
 
 .menu-list:hover,
 .menu-list:focus {
