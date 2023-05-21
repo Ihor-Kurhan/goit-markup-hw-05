@@ -135,7 +135,7 @@ img {display: block}
     /* color: #404bbf; */
 }
 .current {
-    
+
 }
 
 .current::after {
@@ -148,10 +148,6 @@ img {display: block}
     border-radius: 2px;
 }
 
-.current {
-    color:  #404BBF;
-    
-}
 .menu-list:hover,
 .menu-list:focus {
     color: #404BBF;
