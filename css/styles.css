@@ -593,7 +593,7 @@ margin-right: 76px;
     transform: translate(0, 0);
 }
 
-.overlay:hover {
+.overlay-txt:hover {
     transform: translateY(0%);
 }
 
